@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node src/index.js",
-    "prettier": "prettier --write src/**/*.js"
+    "test": "mocha test/**/*",
+    "prettier": "prettier --write src/**/*.js test/**/*.js"
   },
   "dependencies": {
-    "fastify": "^3.19.2",
+    "fastify": "^3.20.1",
     "sqlite-async": "^1.1.1"
   },
   "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
     "prettier": "^2.3.2"
   }
 }
